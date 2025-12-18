@@ -1,2 +1,25 @@
-# ApiNodeJs
-API REST para gerenciamento de usuários desenvolvida com Node.js e Express. Utiliza o Prisma ORM para integração com MongoDB, permitindo operações completas de CRUD (criação, listagem, filtragem e remoção) com suporte a buscas dinâmicas por nome e e-mail.
+# User API - Prisma & MongoDB
+
+API simples para gestão de usuários.
+
+## 🚀 Tecnologias
+- Node.js & Express
+- Prisma ORM
+- MongoDB
+
+## 📦 Instalação
+1. `npm install`
+2. Configure o `DATABASE_URL` no arquivo `.env`
+3. `npx prisma generate`
+
+## 🛠️ Execução
+```bash
+node --watch server.js
+
+## Endpoints
+
+- GET /usuarios - Lista/busca usuários (filtros: name, email)
+
+- POST /usuarios - Cadastra novo usuário
+
+- DELETE /usuarios/:id - Remove usuário
